@@ -1,0 +1,8 @@
+.bgimage {
+    background-image: url("../../images//bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    color: #fff;
+    /* background-clip: padding-box; */
+}
