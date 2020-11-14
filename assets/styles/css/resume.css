@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+main {
+  /* width: 100vw; */
+  /* height: 100vh; */
+  display: flex;
+}
+
+table {
+  margin: 0 auto;
+  /* align-self: center; */
+}
+
+table,
+tr,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+
+tbody,
+tfoot {
+  text-align: left;
+}
+
+th,
+td {
+  padding: 5px 10px;
+}
+
+ol,
+ul {
+  margin-left: 1.25rem;
+  padding-left: 0;
+}
+
+figcaption {
+  height: 20px;
+}
+
+figcaption a,
+#email a {
+  color: #000;
+  text-decoration: none;
+}
+
+figcaption a:hover {
+  font-size: 1.25rem;
+}
