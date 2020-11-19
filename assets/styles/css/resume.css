@@ -42,8 +42,7 @@ figcaption {
   height: 20px;
 }
 
-figcaption a,
-#email a {
+a {
   color: #000;
   text-decoration: none;
 }
