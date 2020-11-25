@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>隨機產生4位數</title>
 </head>
+
 <body>
+    <main>
+        <div class="verifyCode">
+            <p>觀察下方圖片的數字</p>
+        </div>
+        <div class="result">
+            <p>輸入上方圖片的數字</p>
+            <input type="text" name='resultNum' maxlength="4" />
+            <button onclick="checkNum()">確定</button>
+        </div>
+    </main>
     <script>
-        for(let i = 0; i < 4; i++) {
+        let verifyCode = document.querySelector('.verifyCode')
+        let numTotal = ''
+        for (let i = 0; i < 4; i++) {
             let num = Math.floor(Math.random() * 10)
-            document.write(`<img src="./assets/images/${num}.PNG" />`)
+            verifyCode.innerHTML += `<img width='100' src="./assets/images/${num}.PNG" />`
+            numTotal += `${num}`
+        }
+
+        const checkNum = () => {
+            let num = document.querySelector('input[name="resultNum"]').value;
+            (parseInt(num) === parseInt(numTotal)) ? alert('輸入正確') : alert('輸入錯誤')
         }
     </script>
 </body>
+
 </html>
